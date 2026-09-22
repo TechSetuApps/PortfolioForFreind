@@ -5,7 +5,7 @@
 # Live URL 
 
 ```
-https://techsetuapps.github.io/PortfolioForFreind/
+https://techsetuapps.github.io/PortfolioForFreind
 
 ```
   
