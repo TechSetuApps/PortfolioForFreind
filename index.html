@@ -1,3 +1,8 @@
+<!-- ============================================================
+     Devanshi Jha — A Little Surprise Portfolio
+     Made with love by ProBoiz(AK)
+     Last updated: 2026-09-23
+============================================================ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +23,31 @@
 <meta name="description" content="Devanshi Jha — Class 7 student from Darbhanga, Bihar. Neat handwriting, aesthetic frames, and a head full of sky-high dreams.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#fdfcfb">
+
+<!-- ============================================================
+     MICROSOFT CLARITY — visitor analytics (free, no cookies)
+     HOW TO ACTIVATE (3 steps):
+       1) Go to https://clarity.microsoft.com and sign in with any
+          Microsoft account (Outlook/Hotmail/Live all work — free).
+       2) Click "Add new project" → name it anything (e.g., "Devanshi
+          Portfolio") → enter any URL (Clarity doesn't verify ownership).
+       3) Clarity will show you a snippet. Inside it, find the Project ID
+          — it's the last string in the tag URL, looks like:
+              https://www.clarity.ms/tag/abc1234567
+          So your Project ID is: abc1234567
+          Copy that ID, and replace YOUR_CLARITY_PROJECT_ID below with it.
+
+     That's it. Your dashboard will be at https://clarity.live or
+     linked from your Clarity account. You'll see live visitors,
+     session recordings, heatmaps, country, device, etc.
+============================================================ -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "ymr1c6fc5c");
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1085,12 +1115,137 @@
     background: var(--ink-faint); opacity: 0.6;
   }
 
+  /* Privacy note — small, subtle, sits below the footer meta */
+  .footer-privacy {
+    margin-top: 18px;
+    font-size: 11px;
+    color: var(--ink-faint);
+    line-height: 1.55;
+    max-width: 480px;
+    margin-left: auto; margin-right: auto;
+    opacity: 0.85;
+  }
+  .footer-privacy .pi {
+    display: inline-block;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--bg-tint);
+    border: 1px solid var(--line);
+    color: var(--accent);
+    font-size: 9px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 11px;
+    vertical-align: 1px;
+    margin-right: 4px;
+  }
+  .footer-privacy a {
+    color: var(--ink-soft);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: var(--line);
+  }
+  .footer-privacy a:hover { color: var(--accent); text-decoration-color: var(--accent-3); }
+
+  /* =========================================================
+   VISITOR COUNTER — abacus.jasoncameron.dev (free, no signup, JSON)
+   ========================================================= */
+  .counter-section {
+    padding: 40px 28px 80px;
+    text-align: center;
+  }
+  .counter-card {
+    max-width: 460px;
+    margin: 0 auto;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 36px 28px 30px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow .4s var(--ease), transform .4s var(--ease);
+    position: relative;
+    overflow: hidden;
+  }
+  .counter-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-3px);
+  }
+  /* subtle gradient corner glow */
+  .counter-card::before {
+    content: "";
+    position: absolute; top: -40px; right: -40px;
+    width: 120px; height: 120px;
+    background: radial-gradient(circle, rgba(224, 80, 126, 0.18), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .counter-eyebrow {
+    position: relative;
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 11px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--ink-soft);
+    padding: 6px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--bg);
+    margin-bottom: 22px;
+  }
+  .counter-pulse {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 4px rgba(224, 80, 126, 0.18);
+    animation: pulse 2.2s var(--ease) infinite;
+  }
+  .counter-display {
+    position: relative;
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    margin: 6px 0 14px;
+  }
+  .counter-label-text {
+    font-size: 12px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .counter-number {
+    font-family: var(--font-display);
+    font-size: 3.4rem;
+    font-weight: 600;
+    line-height: 1;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.02em;
+    min-width: 1.2em;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .counter-number.fallback {
+    font-size: 2rem;
+    font-family: var(--font-hand);
+    -webkit-text-fill-color: var(--accent);
+    color: var(--accent);
+  }
+  .counter-thanks {
+    position: relative;
+    font-family: var(--font-hand);
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+    margin: 12px 0 0;
+  }
+  @media (max-width: 640px) {
+    .counter-card { padding: 28px 22px 24px; }
+    .counter-number { font-size: 2.7rem; }
+    .counter-thanks { font-size: 1.05rem; }
+  }
+
   /* =========================================================
    REDUCED MOTION
    ========================================================= */
   @media (prefers-reduced-motion: reduce) {
     .reveal, .intro-line, .poem .line { opacity: 1 !important; transform: none !important; transition: none !important; }
-    .hero h1 .last, .scroll-cue, .hero-eyebrow .dot, .monogram, .hero::before, .sparkle, .footer-meta .heart { animation: none !important; }
+    .hero h1 .last, .scroll-cue, .hero-eyebrow .dot, .monogram, .hero::before, .sparkle, .footer-meta .heart, .counter-pulse { animation: none !important; }
     html { scroll-behavior: auto; }
   }
 </style>
@@ -1372,13 +1527,29 @@
       <div class="msg-body">
         <p>Hey Devanshi, agar ye padh rahi ho toh — <em>surprise!</em></p>
         <p>Bas itna chahta tha ke internet ka ek chhota sa corner sirf <em>tumhara</em> ho. Ek page jo woh sab bol de jo main personally bolna bhool jaata hun.</p>
-        <p>Tum apni handwriting se bhi neat ho, apni chats se bhi warm ho, aur apne sapno se bhi zyada <em>brave</em> ho — jitna tum khud ko maanti ho. Aasmaan lucky hai ki ek din woh tumse milne wala hai.</p>
-        <p>Likhna mat chodna. Frame karte raho. Sapne dekhte raho. Aur khud ko kabhi mat badalna.</p>
+        <p>Tum apni handwriting se bhi neat ho, apni chats se bhi warm ho, aur apne sapno se bhi zyada <em>brave</em> ho — jitna tum khud ko maanti ho. Aasmaan lucky hai ki ek din woh tumhe milne wala hai.</p>
+        <p>Likhna mat chodna. Frame karte raho. Sapne dekhte raho. Aur khud se kabhi mat badalna.</p>
       </div>
       <div class="msg-sign">
         — ProBoiz(AK)
         <small>made with way too much love, and zero chill</small>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISITOR COUNTER ================= -->
+<section class="counter-section">
+  <div class="wrap">
+    <div class="counter-card reveal">
+      <span class="counter-eyebrow">
+        <span class="counter-pulse"></span> live counter
+      </span>
+      <div class="counter-display">
+        <span class="counter-label-text">You are visitor no.</span>
+        <span class="counter-number" id="visitor-count">—</span>
+      </div>
+      <p class="counter-thanks">thanks for stopping by ♥</p>
     </div>
   </div>
 </section>
@@ -1407,6 +1578,12 @@
     <span class="sep" aria-hidden="true"></span>
     <span>Surprise &#8226; Class 7 &#8226; Darbhanga</span>
   </div>
+
+  <p class="footer-privacy reveal">
+    <span class="pi" aria-hidden="true">i</span>
+    This little page uses <a href="https://clarity.microsoft.com" target="_blank" rel="noopener noreferrer">Microsoft Clarity</a>
+    for anonymous visitor analytics &mdash; no cookies, no personal data stored. Just to know how many hearts stopped by.
+  </p>
 </footer>
 
 <script>
@@ -1570,6 +1747,76 @@
       document.body.style.setProperty('--my', y + 'px');
     }, { passive: true });
   }
+
+  /* =========================================================
+     VISITOR COUNTER — abacus.jasoncameron.dev (free, no signup, JSON)
+     - First visit per browser: hits /hit endpoint (increments count)
+     - Returning visits: hits /get endpoint (display only, no increment)
+     - Animated count-up from 0 to target on load
+     - Fallback "♥" if fetch fails
+     ========================================================= */
+  (function () {
+    const NS = 'devanshi-portfolio-2026';
+    const KEY = 'visitors';
+    const STORAGE_KEY = 'devanshi_visited_v1';
+
+    // Check if this browser has visited before (unique visitor tracking)
+    let visited = false;
+    try { visited = !!localStorage.getItem(STORAGE_KEY); } catch (e) {}
+
+    // Mark as visited so future loads use /get (no double-count on refresh)
+    if (!visited) {
+      try { localStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+    }
+
+    const action = visited ? 'get' : 'hit';
+    const url = `https://abacus.jasoncameron.dev/${action}/${NS}/${KEY}`;
+    const el = document.getElementById('visitor-count');
+    if (!el) return;
+
+    const prefersReducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function showFallback() {
+      el.classList.add('fallback');
+      el.textContent = '♥';
+    }
+
+    function animateCount(target, duration) {
+      if (prefersReducedMotion) {
+        el.textContent = target.toLocaleString();
+        return;
+      }
+      const start = 0;
+      const startTime = performance.now();
+      function tick(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+        const current = Math.floor(start + (target - start) * eased);
+        el.textContent = current.toLocaleString();
+        if (progress < 1) {
+          requestAnimationFrame(tick);
+        } else {
+          el.textContent = target.toLocaleString();
+        }
+      }
+      requestAnimationFrame(tick);
+    }
+
+    fetch(url)
+      .then(r => {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(data => {
+        if (data && typeof data.value === 'number') {
+          animateCount(data.value, 1200);
+        } else {
+          throw new Error('Bad response');
+        }
+      })
+      .catch(showFallback);
+  })();
 </script>
 </body>
 </html>
